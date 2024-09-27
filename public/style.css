@@ -1,0 +1,64 @@
+/* Positioning the ETHGlobal logo */
+#logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#ethglobal-logo {
+    width: 120px;
+}
+
+/* Styling the leaderboard */
+#leaderboard-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 350px;  /* Increased width */
+    max-height: none;  /* Remove the height limit */
+    overflow: visible;  /* Ensure content remains visible */
+}
+
+#leaderboard-container h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#leaderboard li {
+    font-size: 14px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for highlights */
+}
+
+#leaderboard li:last-child {
+    border-bottom: none;
+}
+
+/* Highlighted leaderboard item */
+#leaderboard li.highlight {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent highlight */
+    color: yellow; /* Highlighted color */
+    font-weight: bold; /* Bold text for highlighted item */
+}
+
+/* Style for the network visualization */
+#network {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
