@@ -50,11 +50,9 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('globe-container').appendChild(renderer.domElement);
 
-// Create the globe
+// Create the spherical mesh (a simple globe)
 const geometry = new THREE.SphereGeometry(5, 32, 32);
-const material = new THREE.MeshBasicMaterial({
-    map: new THREE.TextureLoader().load('path/to/world_map_texture.jpg')
-});
+const material = new THREE.MeshBasicMaterial({ color: 0x00aaff, wireframe: false });  // Simple blue globe
 const globe = new THREE.Mesh(geometry, material);
 scene.add(globe);
 
