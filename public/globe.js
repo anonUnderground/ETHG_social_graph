@@ -1,5 +1,5 @@
 // Fetch hacker data from the JSON file
-fetch('./public/data/final_hacker_data.json')
+fetch('../data/final_hacker_data.json')
     .then(response => response.json())
     .then(hackerData => {
         console.log('Hacker Data:', hackerData);
